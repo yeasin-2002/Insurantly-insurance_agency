@@ -6,6 +6,9 @@ export default {
       colors: {
         navyBlue: "#252B42",
         skyBlue: "#8EC2F2",
+        heroGradient: {
+          100: "",
+        },
       },
     },
   },
