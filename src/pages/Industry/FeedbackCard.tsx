@@ -1,5 +1,5 @@
+import avatar from "../../assets/temp/avatar.png";
 import FullStar from "../../components/Icons/FullStar";
-import avatar from "../../assets/temp/avatar.avif";
 
 interface cardProps {
   title: string;
@@ -13,14 +13,13 @@ interface cardProps {
 const FeedbackCard = ({ title, star, roll, desc }: cardProps) => {
   return (
     <div className=" py-6 px-8 bg-white rounded-sm relative">
-      <div className="ml-2">
-        <p className="text-gray-600  font-bold  text-xl  ">{title}</p>
-        <h4 className="text-gray-700  font-base ">{roll}</h4>
-        <p className="flex">
-          {star}
-          <FullStar />
-        </p>
-      </div>
+      <p className="text-gray-600  font-bold  text-xl  ">{title}</p>
+      <h4 className="text-gray-700  font-base ">{roll}</h4>
+      <p className="flex">
+        {star}
+        <FullStar />
+      </p>
+
       <br />
       <p className="text-gray-600"> {desc}</p>
 
